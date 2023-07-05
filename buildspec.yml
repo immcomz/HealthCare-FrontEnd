@@ -6,21 +6,18 @@ phases:
       nodejs: 18
 
     commands:
-      - npm install
+      - echo Installing source NPM dependencies...
 
   pre_build:
     commands:
-      - echo Installing source NPM dependencies...
-      - npm install
-      - npm install react-scripts
+      - npm i
 
   build:
     commands:
-      - echo Build started on `date`
 
   post_build:
     commands:
-      - echo Build completed on `date`
+      - serve -s build
 
 artifacts:
   type: zip
