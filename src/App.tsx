@@ -5,7 +5,8 @@ interface Patient {
   name: string;
   age: number;
 }
-const apiEndPoint = "http://16.50.98.184:3000/api/patients";
+const apiEndPoint =
+  "http://healthcarebackend-env.eba-a6xqt8zs.ap-southeast-2.elasticbeanstalk.com/api/patients";
 function App() {
   const [patients, setPatients] = useState<Patient[]>([]);
 
