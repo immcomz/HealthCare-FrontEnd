@@ -11,6 +11,8 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
+      - npm install
+      - npm install react-scripts
 
   build:
     commands:
