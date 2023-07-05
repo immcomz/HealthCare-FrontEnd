@@ -17,9 +17,10 @@ phases:
 
   post_build:
     commands:
-      - serve -s build
+      - npm run build
 
 artifacts:
-  type: zip
   files:
     - "**/*"
+  discard-paths: no
+  base-directory: build/
