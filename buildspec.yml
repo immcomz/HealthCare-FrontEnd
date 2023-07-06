@@ -10,6 +10,7 @@ phases:
 
   pre_build:
     commands:
+      - rm -rf node_modules
       - npm ci
       - npm install -g serve
       - npm i -g typescript
