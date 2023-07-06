@@ -21,7 +21,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - serve -s build
 
 artifacts:
   files:
