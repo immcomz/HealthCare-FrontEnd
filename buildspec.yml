@@ -10,13 +10,12 @@ phases:
 
   pre_build:
     commands:
-      - rm -rf node_modules
+      - echo Installing build NPM dependencies...
       - npm ci
-      - npm install -g serve
-      - npm i -g typescript
 
   build:
     commands:
+      - echo Build started on `date`
       - npm run build
 
   post_build:
