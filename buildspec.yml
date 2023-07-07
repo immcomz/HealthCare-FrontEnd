@@ -12,7 +12,8 @@ phases:
     commands:
       - sudo npm ci
       - sudo npm install -g serve
-      - sudo npm i -g typescript
+      - npm install react-scripts@5.0.1 -g
+      - npm install typescript@4.9.5 -g
 
   build:
     commands:
