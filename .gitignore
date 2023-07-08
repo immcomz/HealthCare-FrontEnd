@@ -6,6 +6,7 @@
 .pnp.js
 DockerFile
 .dockerignore
+docker-compose.yml
 
 # testing
 /coverage
