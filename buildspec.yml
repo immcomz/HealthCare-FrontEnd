@@ -10,15 +10,12 @@ phases:
 
   pre_build:
     commands:
-      - sudo npm ci
-      - sudo npm install -g serve
-      - npm install react-scripts@5.0.1 -g
-      - npm install typescript@4.9.5 -g
+      - npm install
 
   build:
     commands:
-      - npm run build
+      - echo Build started on `date`
 
   post_build:
     commands:
-      - echo Build completed on `date`
+      - npm run build
