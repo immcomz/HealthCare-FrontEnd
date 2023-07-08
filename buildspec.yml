@@ -6,11 +6,11 @@ phases:
       nodejs: 18
 
     commands:
-      - echo Installing source NPM dependencies...
+      - npm install
 
   pre_build:
     commands:
-      - npm install
+      - echo Installing source NPM dependencies...
 
   build:
     commands:
