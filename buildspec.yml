@@ -4,19 +4,21 @@ phases:
   install:
     runtime-versions:
       nodejs: 18
-
     commands:
-      - npm install
-      - npm install -g react-scripts
+      - echo Installing source NPM dependencies...
+      - npm ci
 
   pre_build:
     commands:
-      - echo Installing source NPM dependencies...
+      - echo Pre-build steps...
+      - npm i -g typescript
+      - npm i -g serve
 
   build:
     commands:
       - echo Build started on `date`
+      - npm run build
 
   post_build:
     commands:
-      - npm run build
+      - echo Build completed on `date`
