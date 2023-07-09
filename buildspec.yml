@@ -11,8 +11,6 @@ phases:
   pre_build:
     commands:
       - echo Pre-build steps...
-      - npm i -g typescript
-      - npm i -g serve
 
   build:
     commands:
