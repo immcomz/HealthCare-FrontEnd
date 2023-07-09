@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div>
-      <h1>Healthcare App Version 2</h1>
+      <h1>Healthcare App Version 3</h1>
       <ul>
         {patients.map((patient) => (
           <li key={patient.id}>
