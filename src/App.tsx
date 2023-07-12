@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ImageUploader from "./ImageUploader";
 
 interface Patient {
   id: number;
@@ -27,6 +28,7 @@ function App() {
   return (
     <div>
       <h1>Healthcare App Version 3</h1>
+      <ImageUploader />
       <ul>
         {patients.map((patient) => (
           <li key={patient.id}>
